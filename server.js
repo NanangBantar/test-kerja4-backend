@@ -22,6 +22,6 @@ app.use("/user", require("./routes/user"));
 app.use("/file", require("./routes/file"));
 app.use("/country", require("./routes/country"));
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log(`App listening at http://localhost:${process.env.PORT}`)
 });
